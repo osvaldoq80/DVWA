@@ -21,6 +21,8 @@ jobs:
   get_secrets:
     name: Get Some Secrets
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
         with:
